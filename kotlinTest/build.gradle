@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'                   //kotlin
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin' // 注明Kotlin路径
+    }
+    defaultConfig {
+        applicationId "com.lvjinrong.kotlin"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+/**
+ * 1. Kotlin
+ * 2. Kotlin Extensions For Android
+ * 3. Anko DSL Preview ===> 用于预览使用DSL编写的UI代码，就像以前使用xml编写UI文件时可以动态在“Preview”窗口预览效果一样。
+ *    DSL ... just like ===> verticalLayout {
+                                 val name = editText()
+                                 button("Say Hello") {
+                                    onClick { toast("Hello, ${name.text}!") }
+                                 }
+                             }
+ */
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    //直接使用build.gradle中的kotlin版本
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    /**
+     * Anko是JetBrains开发的一个强大的库。
+     * 它主要的目的是用来替代以前XML的方式来使用代码生成UI布局。
+     * Anko包含了很多的非常有帮助的函数和属性来避免让你写很多的模版代码.
+     */
+    compile "org.jetbrains.anko:anko-common:$anko_version"
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+}
+
+/**
+ * 自动创建了很多的属性来让我们直接访问XML中的view
+ * 任何属性调用函数,比如获取到view并具有缓存功能,以免每次属性被调用都会去重新获取这个view。
+ * 需要注意的是这个缓存装置只会在 Activity 或者 Fragment 中才有效。
+ * 如果它是在一个扩展函数中增加的，这个缓存就会被跳过，因为它可以被用在 Activity 中但是插件不能被修改，所以不需要再去增加一个缓存功能。
+ * */
+buildscript {
+    repositories {
+        jcenter( )
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+    }
+}

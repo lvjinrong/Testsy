@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <GridLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:rowCount="5"
+        android:columnCount="3"
+        tools:context="com.lvjinrong.kotlin.Kotlin4Activity">
+
+        <Button
+            android:id="@+id/kotlin4_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kotlin4_btn1"/>
+        <Button
+            android:id="@+id/kotlin4_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kotlin4_btn2"/>
+        <Button
+            android:id="@+id/kotlin4_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kotlin4_btn3"/>
+        <Button
+            android:id="@+id/kotlin4_btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kotlin4_btn4"/>
+        <Button
+            android:id="@+id/kotlin4_btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kotlin4_btn5"/>
+    </GridLayout>
+    <com.lvjinrong.kotlin.CakeView
+        android:id="@+id/cakeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+

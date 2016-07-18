@@ -1,0 +1,1 @@
+include ':Album', ':kotlinTest', ':kotlintest1', ':appwidgetprovider'
