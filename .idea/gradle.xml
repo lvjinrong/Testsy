@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Album" />
+            <option value="$PROJECT_DIR$/CollapsingToolbarLayout" />
             <option value="$PROJECT_DIR$/appwidgetprovider" />
             <option value="$PROJECT_DIR$/kotlinTest" />
             <option value="$PROJECT_DIR$/kotlintest1" />
@@ -18,6 +19,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Album" />
+            <option value="$PROJECT_DIR$/CollapsingToolbarLayout" />
             <option value="$PROJECT_DIR$/appwidgetprovider" />
             <option value="$PROJECT_DIR$/kotlinTest" />
             <option value="$PROJECT_DIR$/kotlintest1" />

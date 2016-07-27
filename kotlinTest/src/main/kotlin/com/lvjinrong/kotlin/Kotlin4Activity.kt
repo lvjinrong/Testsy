@@ -1,6 +1,5 @@
 package com.lvjinrong.kotlin
 
-import android.content.Intent
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -46,14 +45,13 @@ class Kotlin4Activity : AppCompatActivity() , View.OnClickListener {
 
         val list = asList(1,2,3,4,5,6)
 
+
         val doublelist = list.map { it -> it * 2 }
 
         val strings = listOf("anim-v21" , "interpolator" , "layout-sw600dp" , "layout-sw600dp-v13" )
         val maxValue = max(strings, { a, b -> a.length < b.length })
 
         fun(x: Int, y: Int): Int = x + y
-
-
 
     }
 

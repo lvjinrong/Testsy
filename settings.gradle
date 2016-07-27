@@ -1,1 +1,1 @@
-include ':Album', ':kotlinTest', ':kotlintest1', ':appwidgetprovider'
+include ':Album', ':kotlinTest', ':kotlintest1', ':appwidgetprovider', ':CollapsingToolbarLayout'

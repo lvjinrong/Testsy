@@ -42,9 +42,9 @@ dependencies {
     //直接使用build.gradle中的kotlin版本
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     /**
-     * Anko是JetBrains开发的一个强大的库。
-     * 它主要的目的是用来替代以前XML的方式来使用代码生成UI布局。
-     * Anko包含了很多的非常有帮助的函数和属性来避免让你写很多的模版代码.
+     *  Anko是JetBrains开发的一个强大的库。
+     *  它主要的目的是用来替代以前XML的方式来使用代码生成UI布局。
+     *  Anko包含了很多的非常有帮助的函数和属性来避免让你写很多的模版代码.
      */
     compile "org.jetbrains.anko:anko-common:$anko_version"
     compile 'com.android.support:appcompat-v7:23.4.0'

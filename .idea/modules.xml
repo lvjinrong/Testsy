@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Album/Album.iml" filepath="$PROJECT_DIR$/Album/Album.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CollapsingToolbarLayout/CollapsingToolbarLayout.iml" filepath="$PROJECT_DIR$/CollapsingToolbarLayout/CollapsingToolbarLayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tests.iml" filepath="$PROJECT_DIR$/Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/appwidgetprovider/appwidgetprovider.iml" filepath="$PROJECT_DIR$/appwidgetprovider/appwidgetprovider.iml" />
       <module fileurl="file://$PROJECT_DIR$/kotlinTest/kotlinTest.iml" filepath="$PROJECT_DIR$/kotlinTest/kotlinTest.iml" />
